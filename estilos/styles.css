@@ -1,0 +1,820 @@
+.titulo {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/backgroundimage.jpg);
+    width: 100%;
+    height: 100%;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    list-style: none; 
+    margin-top: 0%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-bottom:  rgb(172, 172, 172) solid 2px;
+    font-weight: bold;
+    background-image: url(../img/backgroundimage.jpg) ;
+    width: 97%;
+    height: 97%;
+}
+.botonMenu{
+    font: small-caps  serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    border: none;
+    background-color: inherit;
+}
+/*------- MENU DESPLEGABLE -------*/
+.menudesplegable {
+    display: none;
+}
+
+/*SUBMENU MARCAS */
+li ul li a button {
+    margin-top: 5px;
+    
+}
+ul ul {
+    list-style:none;
+    display: none;
+    margin-top: 0.9%;        
+}
+li ul {
+    position: absolute;
+    left: 45%;
+}
+li li {
+    background-image:url(../img/backgroundimage.jpg);
+}
+li:hover ul {
+    display: block;
+}
+/*------------------------------------------------------------------------------------------ */
+            
+body {
+    margin: 0%;
+    background-color: black ;
+}
+            
+ .contenedor {
+    font: small-caps 100%/190% serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-top: 1%;
+    border-bottom: 2%;
+    margin: 5%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    color: rgb(226, 209, 224);
+    background-color: black;
+    border-bottom:  rgb(114, 114, 114) solid 2px;
+}
+h2{
+    color: rgb(204, 226, 3);
+}
+h3 {
+    color: rgb(205, 219, 72);
+}
+/*---------- HOME ---------*/
+
+.concepto{
+    display: flex;
+    justify-content: space-around;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.ingredientes{
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+/*TABLA DINAMICA Y JSON: */
+
+.inputTablaDinamica {
+    width: 32.5%;
+    height: 8px;
+}
+.inputTablaDinamicaml {
+    width: 22.5%;
+    height: 10px;
+}
+.inputs {
+    margin-left: 30%;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.h2Form {
+    color: yellow;
+    margin-left: 27%;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.labelTdinamica {
+    margin-left: 3%;
+    color: rgb(230, 255, 6);
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+.formularioTablajs {
+    background-image:url(../img/formsjs2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 17.8%;
+    width: 59.3%;
+    border: ridge 3.7px rgb(233, 200, 13);
+}
+.tablacompleta {
+    margin-top: 10px;
+    margin-bottom: 5%;
+}
+#buscar  {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    color: rgb(97, 81, 8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: -75px;
+}
+#buscar:active {
+    cursor:progress;
+}
+#buscar:hover,#volver:hover {
+    background-color: rgb(248, 228, 48);
+    color: white;
+}
+#volver {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: bolder;
+    border-radius: 100%;
+    border: none;
+    background-color: white;
+    color: rgb(97, 81, 8);
+    cursor: pointer;
+    transition: all 0.7s ease;
+    margin-left: 0px;
+}
+#volver:active {
+    cursor:progress;
+}
+.filtro {
+    margin-top: 20px;
+    margin-left: 28%;
+}
+.filtro input {
+    width: 220px;
+    height: 15px;
+    border:solid 2px rgb(231, 235, 11);
+   
+}
+.filtro label {
+    color: yellow;
+    text-shadow: 1px 3px rgb(134, 122, 10);
+    font-weight: bolder;
+}
+#msg {
+    margin-left: 30%;
+    color: red;
+    text-shadow: 1px 2px white;
+    padding: 3px;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+.tabladinamica {
+    border: solid 5px rgb(233, 200, 13);
+    background-color: rgb(212, 211, 211);
+    color: rgb(173, 55, 55);
+    margin-top: -25px;
+    margin-left: 17.8%;
+    width: 59.9%;
+}
+.botonera {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 25%;
+}
+.botonTabla { 
+    border-radius: 30% ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 86);
+    padding: 6px;
+    margin: 5.5px;
+    width: 170px;
+    cursor:pointer;
+    box-shadow: 2px 3px rgb(224, 221, 22);
+}
+    .botonTabla:active {
+    background-color: #fdf901;
+    transform: translateY(6px);
+}
+.tr {
+    color: rgb(245, 0, 0);
+    font-size: larger;
+    background-color: rgb(248, 248, 62);
+}
+.editar, .borrar {
+    align-items:flex-end;
+}
+#busqueda {
+    border-radius: 20%;
+    border: solid 3px rgb(255, 255, 0);
+    font-weight: bolder;
+    color: rgb(68, 62, 3);
+}
+
+
+ tr td .fas {
+    border: none;
+    background-color:rgb(212, 211, 211);
+    color: rgb(12, 10, 10);
+    font-size: 1.2rem;
+    cursor: pointer;
+    
+}
+tr td .fas:active {
+    color: red;
+    cursor:progress;
+}
+.btn-editar:active {
+    color: rgb(82, 116, 114) !important;
+    cursor:progress;
+}
+.botonesTd {
+    background-color: rgb(212, 211, 211);
+    align-items: center;
+    text-align: center;
+}
+
+
+/* COLORES RESALTADOS DE FILA TABLA JS :*/
+.redbullTablajs {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    background-color: rgb(165, 9, 9);
+}
+.monsterTablajs {
+    color: rgb(3, 90, 3);
+    font-weight: bold;
+    background-color: rgb(64, 184, 64);
+}
+.rockstarTablajs {
+    color: rgb(217, 255, 0);
+    font-weight: bold;
+    background-color: rgb(181, 184, 46);
+}
+.bangTablajs {
+    color: rgb(185, 24, 51);
+    font-weight: bold;
+    background-color: rgb(5, 94, 121);
+}
+/* --------------------------------------------------------------------------- */
+
+
+/*------------- MARCAS -----------------*/
+
+.bebidas p::first-letter{
+    font-size: 4rem;
+  }
+.contenedorbebidas {
+    width:50%;
+    display: flex;
+    justify-content: space-between ;
+    padding-left: 8%;
+}
+.bebidas {
+    width: 50%;
+    font-size: larger;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+.listaImagenRedbull{
+    display: flex;
+}
+.listasaboresRedbull {
+    margin-left: 1%;
+    padding-top: 1%;
+}
+.lataredbull {
+    width: 60%;
+    height:70%;
+    margin-left:20%;
+}
+.listaImagenMonster {
+    display: flex;
+}
+.latamonster {
+    margin-top: 3%;
+    margin-left: 6%;
+}
+.latamonster1 {
+    margin-top: 35px;
+    margin-left: 80px;
+width: 90%;
+height: 80%;
+border: 9px ridge rgb(6, 100, 9);
+}
+.listaImagenRockstar {
+    display: flex;
+}
+.listasaboresRockstar {
+    margin-right: 8%;
+}
+.latarockstar {
+    margin-top: 9%;
+    width: 65%;
+    height: 70%;
+    border: 4px inset yellow;
+}
+.listaimagenBang {
+    display: flex;
+}
+.contenedorimagenBang {
+    margin-top: 5%;
+    margin-right: 15%;
+}
+.latabang {
+    width: 70%;
+    height: 90%;
+    border: 4px solid rgb(29, 180, 160);
+}
+
+           /*Fotos MARCAS */
+.bebidaredbull {
+    margin-top: 40%;
+    width: 80%; 
+    height: 50%;
+}
+.bebidamonster {
+    margin-top: 50px;
+    width: 80%; 
+    height: 50%;
+}
+.bebidarockstar {
+    margin-top: 2%;
+    height: 70%;
+    width: 80%;
+}
+.bebidabang {
+    margin-top: 20%;
+    height: 60%;
+    width: 70%;
+}
+
+/* Botones leer mas MARCAS */
+.leermasRedbull {
+    padding: 5px;
+    border: 3px solid red;
+    border-radius: 20%;
+}
+
+.leermasMonster {
+    padding: 5px;
+    border: 3px solid rgb(14, 82, 5);
+    background-color: rgb(146, 219, 146);
+    border-radius: 20%;
+}
+
+.leermasRockstar {
+    padding: 5px;
+    border: 3px solid rgb(226, 241, 8);
+    background-color: rgb(233, 226, 124);
+    border-radius: 20%;
+}
+.leermasBang {
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 3px solid rgb(158, 10, 121);
+    background-color:teal ;
+    border-radius: 20%;
+}
+
+/*--- COLORES TITULOS Y SPAN MARCAS ------*/
+.red {
+    font-size: 2rem;
+    color: red;
+}
+.bull {
+    font-size: 2rem;
+    color: white;
+}
+.monster {
+    font-size: 2rem;
+    color: rgb(8, 185, 8);
+}
+.rockstar {
+    font-size: 2rem;
+    color:rgb(235, 235, 12)
+}
+.bang {
+    font-size: 2rem;
+    color: rgb(45, 164, 204);
+}
+.ene {
+    font-size: 2rem;
+    color: white;
+}
+.rgy {
+    font-size: 2rem;
+    color: rgb(207, 21, 77);
+}
+
+/*--------- Links PRODUCTOS (href) -------------- */
+.aRedbull {
+    color: red;
+}
+.aMonster {
+    color: green;
+}
+.aRockstar {
+    color: yellow;
+}
+.aBang {
+    color:rgb(179, 2, 140);
+}
+
+
+/* --------- COLORES TABLAS ------ */
+td, th {
+    border: 1% solid rgb(223, 214, 214);
+}
+.tableRedBull {
+    border: 2px solid white;
+    margin: 5%;
+    border-spacing: 0px;
+}
+.trredbull {
+    color: red;
+    background-color: white;
+}
+.tableMonster {
+    border: 2px solid;
+    margin: 20px;
+    border-spacing: 0px;
+}
+.trmonster {
+    color: rgb(6, 134, 6);
+    background-color: cornsilk;
+}
+.tableRockstar {
+    border: 2px solid yellow;
+    margin: 40px;
+    border-spacing: 0;
+}
+.trRockstar {
+    color: rgb(73, 73, 4);
+    background-color: rgb(255, 255, 0);
+    }
+
+.tableBang {
+    color:rgb(255, 255, 255);
+    border: 2px solid violet ;
+    margin: 20px;
+    border-spacing: 0;
+}
+.trBang {
+    color:  rgb(255, 0, 179);
+    background-color:  rgb(94, 197, 245);
+}
+
+    /*-------- CONTANCTO.HTML -------------*/
+
+.formulariocompleto {
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-weight: bold;
+    border: solid 3px rgb(22, 126, 158);
+    background-image: url(../img/contacto.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 3% 5%; 
+    margin-top:10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom:10% ;   
+}
+.formulario {    
+    margin-top: 3%;
+    font-size: bold;
+}
+.tituloFormulario {
+    color: rgb(9, 45, 70);
+    display: flex;
+    justify-content: center;
+    margin-top: -2%;
+}
+    
+.boton-captcha {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 4% 5%;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;	
+    color: #fff;
+    background-color: #15837a;
+    border: none;
+    border-radius: 3%;
+    box-shadow: 0% 1% rgb(85, 64, 64);
+}
+    .boton-captcha:active {
+        background-color: #234949;
+        transform: translateY(5px);
+      }
+input { 
+    padding: 1%;
+    border-radius: 10%;
+    border-color: rgb(46, 179, 161);
+    width: 19.2%;   
+}
+.input-captcha {
+    width:40%;
+    border: solid 5px rgb(21, 189, 201);
+}
+.captcha {
+    margin: 5%;
+}
+.captcha-correcto {
+    display: flex;
+    justify-content: center;
+    font-size: bold;
+    background-color: green;
+}
+.captcha-incorrecto {
+    display: flex;
+    justify-content: center;
+    font-size: bold;
+    background-color: red;
+}
+.botonMostrarMenu {
+    display: none;
+}
+    
+/* -----------PIE DE PAGINA ----------*/
+.pieDePagina {
+    display: flex;
+    justify-content: center;
+    margin-top: -2%;
+    padding: 1%;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    }
+/*------------------------------------------------------------------------------------------------------*/
+
+
+
+
+        /* -------------------MOBILE----------------*/
+
+
+@media only screen and (max-width:440px) {
+body {
+    width: 100%;
+    height: 100%;
+    }
+.nav {
+    display:none;
+  }
+  .titulo {
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/backgroundimage.jpg);
+    width: 100%;
+    height: 100%;
+}
+.imagenlogo {
+    width: 98%;   
+}
+.contenedor {
+    margin-top: 3%;
+}
+
+.botonMostrarMenu {
+    display: block;
+    height: 20%;
+    width: 100%;
+    background-color: rgb(247, 247, 0);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 7px rgb(165, 165, 2);
+      }
+      .botonMostrarMenu:active {
+          background-color: rgb(116, 116, 5);
+          transform: translateY(7px);
+}
+li ul {
+    position: absolute;
+    left: 18%;
+    margin-top: -2.3%;
+}
+ul ul {
+    list-style:none;
+    display: none;
+ }
+li li {
+    background-color: turquoise;
+}
+ li:hover ul {
+    display: block;
+}
+
+            /*----------------------------------------------------------*/
+/*TABLA DINAMICA JS : */
+.formularioTablajs {
+    background-image:url(../img/formsjs2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-top: 20px;
+    margin-left: 16%;
+    width: 66%;
+    border: solid 5px rgb(233, 111, 233);
+    
+}
+.h2Form {
+    color: rgb(196, 78, 151);
+    margin-left: 1%;
+    font-size: 23px;
+    font-weight: bolder;
+    
+}
+.labelTdinamica {
+    margin-left: 3%;
+    color: rgb(236, 191, 230);
+}
+.inputTablaDinamica {
+    padding: 3px;
+    width: 47%;
+    height: 10px;
+    
+}
+
+.inputTablaDinamicaml {
+    padding: 3px;
+    width: 29.5%;
+    height: 10px;
+}
+.inputs {
+    
+    margin-left: 12%;
+    margin-bottom: 10px;
+}
+.botonera {
+    margin-left: 8%;
+}
+#busqueda {
+    border-radius: 20%;
+    border: solid 3px rgb(255, 255, 0);
+    height: 25px;
+}
+.botonTabla { 
+    border-radius: 30% ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 130, 201);
+    margin: 3.5px;
+    padding: 4px;
+    width: 150px;
+    box-shadow: 2px 3px rgb(170, 56, 127);
+}
+.botonTabla:active {
+    background-color: rgb(77, 5, 49);
+    transform: translateY(2px);
+}
+.tr {
+    color: rgb(240, 184, 218);
+    font-size: larger;
+    background-color: rgb(228, 116, 116);
+    
+}
+.tabladinamica {
+    border: solid 5px rgb(238, 166, 210);
+    background-color: white;
+    color: rgb(173, 55, 55);
+    width: 44%;
+    margin-left: -4%;
+    
+}
+.filtro {
+    margin-left: 10px;
+}
+.filtro input {
+    width: 60%;
+}
+
+
+            /*----------------------------------------------------------*/
+         
+/* MARCAS : */
+.contenedorbebidas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contenidomarcas {
+    width: 80%;
+}
+.bebidas {
+    margin-top: -30px;
+    margin-bottom: 50px;
+    width: 95%;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+.listaImagenMonster, .listaImagenRedbull, .listaImagenRockstar, .listaimagenBang {
+    display: flex;
+    flex-direction:column ;
+}
+
+
+.bebidaredbull, .bebidamonster { 
+    width: 100%;
+    height: 90%;  
+}
+.bebidarockstar {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 90%;
+    height: 70%;
+}
+.bebidabang {
+    width: 80%;
+    height: 70%;
+}
+.contenedor .contenidomarcas {
+        font: small-caps 90%/120% serif;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.lataredbull {
+    margin-top: 8%;
+    margin-left:10%;
+    width: 80%;
+    height:90%;
+}
+.latamonster {
+    margin-top: 5%; 
+}
+.latamonster1 {
+    margin-left: 15px;
+    width: 84%;
+    height: 100%;
+    border: 9px ridge rgb(6, 100, 9);
+}
+.latarockstar {
+    margin-left: 20px;
+    width: 80%;
+    height: 300px;  
+}
+.latabang { 
+    margin-left: 20px;
+    width: 100%;
+    height: 330px;  
+}
+/* ---------------------------------------------------------------------------------------*/
+
+/* FORMULARIO CONTACTO */
+label {
+    font-size: 100%;
+}
+.boton-captcha {
+    display: inline-block;
+    margin-left: 8px;
+    padding: 3% 4%;
+    font-size: 10px;
+    cursor: pointer;
+    text-align: center;	
+    color: #fff;
+    background-color: #15837a;
+    border: none;
+    border-radius: 2%;
+    box-shadow: 0% 1% rgb(85, 64, 64);
+}
+.boton-captcha:active {
+    background-color: #234949;
+    transform: translateY(4px);
+  }
+input { 
+    padding: 1%;
+    border-radius: 2%;
+    border-color: rgb(46, 179, 161);
+    width: 70%;
+  }
+.input-captcha {
+    width:80%;
+    border: solid 5px rgb(21, 189, 201);
+}
+.captcha {
+    margin: 5%;
+}
+
+}
+
+
+
+
+
+

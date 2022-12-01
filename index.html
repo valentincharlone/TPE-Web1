@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <title>⚡Drinks Energy⚡</title>
+</head>
+<body>
+    <header class="titulo">
+        <img src="img/logo.png" alt="" class="imagenlogo">
+    </header>
+    <button class="botonMostrarMenu" id="mostrarMenu">MENU</button>
+    
+    <nav>
+        <ul class="nav" id="nav">
+            <li> <button class="botonMenu"> Home </button> </li>
+            <li> <a href="marcas.html"> <button class="botonMenu"> Marcas </button> </a> 
+                <ul>
+                    <li> <a href="redbull.html"><button class="botonMenu"> Redbull </button></a></li>
+                    <li> <a href="monster.html"> <button class="botonMenu"> Monster </button></a></li>
+                    <li> <a href="rockstar.html"><button class="botonMenu"> Rockstar</button></a> </li>
+                    <li> <a href="bang.html"> <button class="botonMenu"> Bang </button></a></li>
+                </ul>   
+            </li>
+            <li> <a href="contacto.html"> <button class="botonMenu"> Contacto </button> </a> </li>
+        </ul>
+    </nav>
+ <div class="contenedor">
+
+        <article>
+            <h2>¿Que son?</h2>
+                <section class="concepto">
+                        <p>
+                            Las bebidas energéticas o hipertónicas son bebidas sin alcohol, que contienen sustancias estimulantes, y que ofrecen al consumidor el evitar o disminuir la fatiga y el agotamiento, además de aumentar la habilidad mental y proporcionar un incremento de la resistencia física. Están compuestas principalmente por cafeína, varias vitaminas, carbohidratos, y otras sustancias naturales orgánicas como la taurina, que eliminan la sensación de agotamiento de la persona que las consume.
+    
+                            No se deben confundir con las bebidas isotónicas ni con otro tipo de bebidas como las gaseosas, ya que inclusive en los mismos envases se advierte que no se consideran bebidas hidratantes. Por contener altas dosis de cafeína pueden producir dependencia y otros efectos adversos. Parte de la sensación de bienestar producida por las bebidas energéticas es causada por un efecto energético que se produce por la acción de sustancias psicoactivas (siendo la cafeína, un alcaloide, uno de los ingredientes en estas bebidas) que actúan sobre el sistema nervioso central, inhibiendo los neurotransmisores encargados de transmitir las sensaciones de cansancio o sueño, y potenciando aquellos relacionados con las sensaciones de bienestar y la concentración.
+                        </p>
+                       
+                    </section>
+            <h2>Ingredientes</h2>
+                <section class="ingredientes">
+                    <p>
+                        Agua carbonatada, glucuronolactona, vitaminas del Grupo B (tales como B2, B3, B4, B5, B6, B12), taurina, cafeína, guaraná o extracto, azúcar (las versiones no dietéticas), aspartamo (las versiones dietéticas), L-Carnitina, vitamina C, ácido cítrico, acidulantes, ginseng o extracto, betacaroteno, ácido pantoténico, fosfato monopotásico, D-Ribosa, colorante, caramelo, etc. Todo varía según el fabricante y el modelo de la cual se escoja.
+
+                        La presencia de carbohidratos, cafeína, vitaminas, carnitina o D-Ribosa, hacen que supuestamente las bebidas sean regeneradoras o energizantes. Claro está que muchos de sus ingredientes tienen un efecto estimulante, haciendo que su mezcla genere una respuesta positiva y esperada, dando como resultado efectos de estímulo en el organismo. Pero también estas bebidas son muy cuestionadas mundialmente por incluir todo esto, a tal nivel que existen organizaciones que descartan uno por uno la utilidad de los ingredientes.
+                    </p>
+                    
+                </section>
+            </article>
+
+<article>
+            <h2>Diseña tu propia bebida!</h2>
+            
+
+        
+    <div class="formularioTablajs">
+
+        <form action="">
+          <h2 class="h2Form">⚡ Arma tu lata ⚡ </h2>
+            <div class="inputs">
+                <section action="">
+                    <label class="labelTdinamica">Marca:</label> <input type="text" placeholder="Marca" id="marca" class="inputTablaDinamica">  
+                </section>
+                <section action="">
+                    <label class="labelTdinamica">Sabor:</label> <input type="text" placeholder="Sabor" id="sabor" class="inputTablaDinamica">
+                </section>
+                <section action="">
+                    <label class="labelTdinamica">Contenido:</label><input type="number" placeholder="En ml." id="tamaño" class="inputTablaDinamicaml">
+                </section>
+            </div>
+        </form>
+
+     <div class="botonera">
+             <button type="button" id="agregar1" class="botonTabla">Agregar 1</button>  
+             <button type="button" id="agregar3" class="botonTabla">Agregar 3</button>
+     </div>
+
+    </div>
+        <div class="filtro">
+                <label for="">Buscar: </label><input type="text" placeholder="Filtro" id="busqueda">
+                <button id="buscar" class="fas fa-search"></button>
+                <button id="volver" class="fas fa-undo-alt"></button>
+        </div>
+        <div class="tablacompleta">
+            <p id="msg"></p>
+                <table class="tabladinamica"> 
+                    <thead class="tr">
+                    <tr>
+                       <th>ID</th>
+                       <th> Marca </th> 
+                       <th> Sabor </th> 
+                       <th> Tamaño </th> 
+                       <th> Editar/Borrar</th> 
+                       
+                    </tr>
+                   </thead>
+                   <tbody id="tablaDinamica">
+                   
+                </tbody>
+                   </table>
+        </div>
+            <div>
+                <p id="incorrecto"></p>
+            </div>
+</article>
+
+
+     </div>
+            </div>
+            <footer class="pieDePagina"> <a href="index.html"> <button class="botonMenu"> Bebidas energeticas 2021 </button> </a> </footer>
+
+
+
+    
+            <script src="js/botonMostrarMenu.js"></script>
+            <script src="js/ApiTablaDinamica.js"></script>
+            <script src="js/filtrodebusqueda.js"></script>
+</body>
+</html>
