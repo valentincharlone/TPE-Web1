@@ -18,21 +18,25 @@
     width: 97%;
     height: 97%;
 }
+.nav li a{
+    cursor: pointer;
+}
 .botonMenu{
     font: small-caps  serif;
     font-size: 20px;
     color: rgb(255, 255, 255);
     border: none;
     background-color: inherit;
-}
-/*------- MENU DESPLEGABLE -------*/
-.menudesplegable {
-    display: none;
+    cursor: pointer;
 }
 
-/*SUBMENU MARCAS */
+/*------- MENU DESPLEGABLE -------*/
+
+
+/* SUBMENU MARCAS
 li ul li a button {
     margin-top: 5px;
+    
     
 }
 ul ul {
@@ -49,7 +53,7 @@ li li {
 }
 li:hover ul {
     display: block;
-}
+} */
 /*------------------------------------------------------------------------------------------ */
             
 body {
@@ -91,40 +95,90 @@ h3 {
 /* ------------------------------------------------------------------------------------------------------- */
 /*TABLA DINAMICA Y JSON: */
 
-.inputTablaDinamica {
-    width: 32.5%;
-    height: 8px;
+.formularioTablajs {
+    
+    border-radius: 20px;
+    margin: auto;
+    width: 59.3%;
+    border: ridge 3.7px rgb(233, 200, 13);
 }
-.inputTablaDinamicaml {
-    width: 22.5%;
-    height: 10px;
+.h2Form {
+    color: yellow;
+    margin-left: 37%;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .inputs {
+    display: flex;
+    flex-direction: column;
+    
     margin-left: 30%;
     margin-bottom: 10px;
     border-radius: 10px;
 }
-.h2Form {
-    color: yellow;
-    margin-left: 27%;
-    font-size: 2rem;
-    font-weight: bold;
-}
 .labelTdinamica {
-    margin-left: 3%;
+    margin-left: 10%;
     color: rgb(230, 255, 6);
     font-weight: bolder;
     font-size: 1.7rem;
+    display: block;
+    margin-top: 5px;
 }
-.formularioTablajs {
-    background-image:url(../img/formsjs2.jpg);
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    margin-left: 17.8%;
-    width: 59.3%;
-    border: ridge 3.7px rgb(233, 200, 13);
+.inputTablaDinamica {
+    margin-top: 15px;
+    margin-left: 70px;
+    min-width: 30%;
+    height: 8px;
+}
+.inputTablaDinamicaml {
+    margin-top: 15px;
+    margin-left: 70px;
+    min-width: 30%;
+    height: 10px;
+}
+.botonera {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 32%;
+}
+.botonTabla { 
+    border-radius: 30% ;
+    color: rgb(0, 0, 0);
+    background-color: rgb(245, 245, 86);
+    padding: 6px;
+    margin: 5.5px;
+    width: 170px;
+    height: 50px;
+    cursor:pointer;
+    font-size: 1rem;
+    font-weight: bolder;
+    box-shadow: 2px 3px rgb(224, 221, 22);
+}
+.botonTabla:active {
+    background-color: #fdf901;
+    transform: translateY(6px);
+}
+.filtro {
+    
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.filtro input {
+    width: 400px;
+    height: 15px;
+    border-radius:solid 2px rgb(231, 235, 11);
+    font-size: 1rem;
+}
+.filtro label {
+
+    font-size: 1.5rem;
+    color: yellow;
+    font-weight: bolder;
 }
 .tablacompleta {
+    margin-left: 5%;
     margin-top: 10px;
     margin-bottom: 5%;
 }
@@ -162,21 +216,7 @@ h3 {
 #volver:active {
     cursor:progress;
 }
-.filtro {
-    margin-top: 20px;
-    margin-left: 28%;
-}
-.filtro input {
-    width: 220px;
-    height: 15px;
-    border:solid 2px rgb(231, 235, 11);
-   
-}
-.filtro label {
-    color: yellow;
-    text-shadow: 1px 3px rgb(134, 122, 10);
-    font-weight: bolder;
-}
+
 #msg {
     margin-left: 30%;
     color: red;
@@ -193,28 +233,12 @@ h3 {
     margin-left: 17.8%;
     width: 59.9%;
 }
-.botonera {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 25%;
-}
-.botonTabla { 
-    border-radius: 30% ;
-    color: rgb(0, 0, 0);
-    background-color: rgb(245, 245, 86);
-    padding: 6px;
-    margin: 5.5px;
-    width: 170px;
-    cursor:pointer;
-    box-shadow: 2px 3px rgb(224, 221, 22);
-}
-    .botonTabla:active {
-    background-color: #fdf901;
-    transform: translateY(6px);
-}
+
+
 .tr {
     color: rgb(245, 0, 0);
     font-size: larger;
+    
     background-color: rgb(248, 248, 62);
 }
 .editar, .borrar {
@@ -229,7 +253,7 @@ h3 {
 
 
  tr td .fas {
-    border: none;
+    border: 1px solid black;
     background-color:rgb(212, 211, 211);
     color: rgb(12, 10, 10);
     font-size: 1.2rem;
@@ -485,33 +509,60 @@ td, th {
 
 .formulariocompleto {
     color: black;
+    
     font-family: Georgia, 'Times New Roman', Times, serif ;
     font-weight: bold;
     border: solid 3px rgb(22, 126, 158);
     background-image: url(../img/contacto.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    padding: 3% 5%; 
-    margin-top:10%;
+    padding:3% 5%; 
+    
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom:10% ;   
 }
-.formulario {    
-    margin-top: 3%;
+.formulario {   
+    display: flex;
+    flex-direction: column;
+    
     font-size: bold;
+    
+}
+.formulario label{
+    font-size: 1.3rem;
+    margin-top: 10px;
+    margin-left: 25%;
+}
+.formulario input{
+    min-width: 400px;
+    margin-left: 25%;
+}
+.formulario  .sexo {
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+.formulario select{
+    height: 30px;
+    max-width: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
 }
 .tituloFormulario {
     color: rgb(9, 45, 70);
     display: flex;
     justify-content: center;
+    font-size: 2rem;
     margin-top: -2%;
 }
     
 .boton-captcha {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 4% 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 35%;
+    height: 50px;
     font-size: 18px;
     cursor: pointer;
     text-align: center;	
@@ -520,6 +571,8 @@ td, th {
     border: none;
     border-radius: 3%;
     box-shadow: 0% 1% rgb(85, 64, 64);
+    max-width: 250px;
+    border-radius: 10px;
 }
     .boton-captcha:active {
         background-color: #234949;
@@ -532,7 +585,7 @@ input {
     width: 19.2%;   
 }
 .input-captcha {
-    width:40%;
+    
     border: solid 5px rgb(21, 189, 201);
 }
 .captcha {
